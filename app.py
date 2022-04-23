@@ -19,7 +19,7 @@ def bot_send_text(bot_message):
 
 
 
-
+#prueba
 def sismo_scraping():
     e = urllib.request.urlopen("http://www.sismologia.cl/ultimos_sismos.html").read()
     soup = BeautifulSoup(e, 'html.parser')
