@@ -67,8 +67,8 @@ print (distancia)
 
 def bot_send_text(bot_message):
     
-    bot_token = '5231406261:AAE1lr7A9feeiv9Ejt3awEyigwzpxtyoqRo'
-    bot_chatID = '-796627951'
+    bot_token = '5242107370:AAGiBaDihZbdphDhybneHT0pU_4bJGDVWkk'
+    bot_chatID = '-713984361'
     send_text = 'https://api.telegram.org/bot' + bot_token + '/sendMessage?chat_id=' + bot_chatID + '&parse_mode=Markdown&text=' + bot_message
 
     response = requests.get(send_text)
