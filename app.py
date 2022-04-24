@@ -43,10 +43,10 @@ dataset.columns = [
     ]
 dataset[["Latitud", "Longitud"]] = dataset[["Latitud", "Longitud"]].apply(pd.to_numeric)
 dataset_filter = dataset[
-            (-21.655 <= dataset["Latitud"])
-            & (dataset["Latitud"] <= -19.370)
-            & (-72.316 <= dataset["Longitud"])
-            & (dataset["Longitud"] <= -68.426)
+            (-27.100 <= dataset["Latitud"])
+            & (dataset["Latitud"] <= -21.680)
+            & (-72.150 <= dataset["Longitud"])
+            & (dataset["Longitud"] <= -66.180)
             ]
 
 tranque = (-24.39,-69.14)
@@ -77,7 +77,7 @@ def bot_send_text(bot_message):
 
 
 def sismo_scraping():  
-    string="A ocurrido un sismo en las cercanías de iquique" "\n""\n" "*Datos del sismo:*" "\n" #titulo con salto de linea
+    string="A ocurrido un sismo en las cercanías del Tranque Laguna Seca" "\n""\n" "*Datos del sismo:*" "\n" #titulo con salto de linea
     
     for column in dataset_filter.head(1).columns:
         string += column +  " : " + str(dataset_filter[column].values[0]) + "\n"
