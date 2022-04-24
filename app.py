@@ -2,6 +2,7 @@ from ast import Return
 from re import T
 from traceback import print_tb
 from turtle import pu
+import geopy
 from geopy.distance import geodesic
 from unittest import result
 from bs4 import BeautifulSoup
